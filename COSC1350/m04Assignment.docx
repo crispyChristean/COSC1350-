@@ -1,0 +1,58 @@
+*Changes I made to my webpage and why. Each listed item follows the same format as the style sheet.
+
+
+* First started with a CSS reset.
+
+
+
+* Set the background color for the body element of the webpage
+to be an apricot color. Just to make the website more unique!
+
+
+
+* Added the max-width of the image tag to be 100%
+Although it wasn't neccassary it will always be consistent to every page.
+
+* Set the margin-left and margin-right to auto. I did this to make the image
+of me become centered to the page.
+
+
+
+
+* Aligned the text in my header to be center and made the color blue
+and the background color black. While I didn't need to change the background
+color it helps show me what is considered the header.
+
+* Added a font family to be times new roman and aligned the text to the center,
+made the html page look formal.
+
+
+* Next selector being the iframe, kept the height of the iframe but changed
+the width to always be 100% to the windows current length, orignally I wanted to change
+it to keep the same dimensions but to center it but couldn't find a way so I decided to make it
+even by making the width span across the whole page.
+
+
+* Alinged the main and footer content to the center. Don't have too much to add or change just yet.
+
+* Have a specified class called "linked", added this to all my 
+links to each page, helps define my links to each page by making it bolder, bigger,
+and fancier (different fonts). Also aligns the links to be centered.
+
+
+* had a div id that specifies the h1 element to that id, underlines the text above 
+the iframe and while creating some space to help define the area.
+
+
+* Had the contactInformation div selector that specifies the list,
+changes the font size, content alignment to the center, changes the color, adds spacing between each
+listed item with padding, and add a unique font to the list. The content is easier to read now
+and looks better as a result.
+
+
+* The next id specifies a section where I made the list talking about myself,
+made the content easier to read and more defined by adding larger font size and 
+aligning the text to the center. Also changed the color and added padding between each listed item.
+
+
+
