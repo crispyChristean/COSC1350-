@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Chirsitian Espinoza 
+	File Name: template.html
+	Date: 09/02/2024
+
+	REMEMBER: TEMPLATE serves as a literal template for when writing new webpages, helps reduce work.
+ -->
+
+<html lang="en">
+	<head>
+		<title>Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" href="C:\Users\spnzc\OneDrive\Desktop\COSC1350\myWebsite\css\styles.css">
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			<h1>Christian</h1>
+			<img src="Images\myPhotoforClass.jpg" alt="Picture of Christian" height="500" width="500">
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav class="linked">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+
+			<p>Main content</p>
+            <!--Made a divided section for the form element-->
+            <div>
+                <form><!--Start of the Form element-->
+                    <h1>TIP CALCULATOR</h1>
+                    <!--Starts off the from with a label describing the bill and calling a input numebr type-->
+                    <label for="mealCost">BILL AMOUNT:</label><br>
+                    <input type="number" id="mealCost" value = "0" step=".01"><br>
+
+                    <br>
+                    <!--Seconds by creating a drop selection through the select element-->
+                    <label for="selectTip">Select Tip via Service Quality: </label><br>
+                    <select id="selectTip" name="selectTip">
+                        <option value="excellentService">Excellent (25%)</option>
+                        <option value="goodService">Good (20%)</option>
+                        <option value="fairService">Fair (15%)</option>
+                        <option value="poorService">Poor (10%)</option>
+                    </select>
+
+                    <br>
+                    <!--The last input element needed that specifies a button for submissions.-->
+                    <!--Specifies the code that will be execute with the given values.x-->
+                    <input type="button" id="submitResponse" value="SUBMIT FOR CALCULATIONS!!! >:D">
+
+                </form>
+            </div>
+            
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>

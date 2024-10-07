@@ -1,0 +1,46 @@
+Here is the results in the terminal output for the practiceVariables.js program.
+
+
+Hi Dr. T!
+Let's get started!
+half of 100 is 50
+concatenate
+0
+4
+51
+NaN
+false
+
+Did any of the typeof outputs surprise you?
+* Yes, the "console.log("5" - 1);" surprised me as I would think the operation wouldn't have been done 
+considering it is holding and working with two different data types. 
+
+What is happening in step 5.1 that is causing the line break?
+* the "\n" seems to be causing the line break, as it also appears in both Java and Python and removing
+it causes the whole thing to appear on one line.
+
+What do you think is happening in 5.2? You might need to research this one. :)
+*From my understanding and with the limited research I did, it seems to be called a template literal.
+By removing the dollar sign it seems to allow for operations to be done within a string. Much like how 
+an f string will be able to show the variable in the string by using curled brackets.
+
+Tell me why the output is what is is for 5.2 - 5.8.
+
+5.2 --> Does the math with the template literal. Output is 50 and is displayed.
+
+5.3 --> Combines strings together to form a word in the output.
+
+5.4 --> Assuming the null value is that of nothing. Multiplying that with 8 will get you nothing as a number,
+or null, so by that logic it makes sense it shows 0 if there is no value to show besides null.
+
+5.5 --> What I beleive is happening is that it's converting the string into an integer to then subtract that 
+to display 4 as the results.
+
+5.6 --> This is doing the same process of 5.3 where strings are combined together to make concatenate. 
+Since the plus operator does the same thing in both I beleive it combines strings together rather than combined
+two numbers together as typically seen. Hence why we see the difference between - and +.
+
+5.7 --> NaN is displayed, which is short for "Not a Number", this makes sense being the output as trying
+to multiply a string with a number does not make a number. 
+
+5.8 --> This is showing a statement that false == true, which is false in itself. Thus the output is false!!! L O L!!!!!!!!!!!

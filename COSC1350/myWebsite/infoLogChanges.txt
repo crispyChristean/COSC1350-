@@ -1,0 +1,15 @@
+Document specifies all the changes I made in this as a whole for this module's assingment. 
+
+
+DATE: 10/06/2024
+NAME: Christian Espinoza 
+
+* Updated the index and template to actually be a template and an index. 
+Now I can actually use the Template to start a webpage like you said was designed to do.
+
+* First made the new html page and linked that to the rest. 
+
+* Started on the instructions for this module's assignment. 
+
+
+
