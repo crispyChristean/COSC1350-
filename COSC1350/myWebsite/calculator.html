@@ -3,7 +3,7 @@
 <!--
 	Student Name: Chirsitian Espinoza 
 	File Name: template.html
-	Date: 09/02/2024
+	Date: 10/05/2024
 
 	REMEMBER: TEMPLATE serves as a literal template for when writing new webpages, helps reduce work.
  -->
@@ -13,7 +13,8 @@
 		<title>Template</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel = "stylesheet" href="C:\Users\spnzc\OneDrive\Desktop\COSC1350\myWebsite\css\styles.css">
+		<link rel = "stylesheet" href="css\styles.css">
+		<script src="Script_Personal_Web\calculator.js"></script>
 	</head>
 
 	<body>
@@ -43,23 +44,29 @@
                 <form><!--Start of the Form element-->
                     <h1>TIP CALCULATOR</h1>
                     <!--Starts off the from with a label describing the bill and calling a input numebr type-->
-                    <label for="mealCost">BILL AMOUNT:</label><br>
+                    <label for="mealCost" value="text">BILL AMOUNT:</label><br>
                     <input type="number" id="mealCost" value = "0" step=".01"><br>
 
                     <br>
                     <!--Seconds by creating a drop selection through the select element-->
                     <label for="selectTip">Select Tip via Service Quality: </label><br>
                     <select id="selectTip" name="selectTip">
-                        <option value="excellentService">Excellent (25%)</option>
-                        <option value="goodService">Good (20%)</option>
-                        <option value="fairService">Fair (15%)</option>
-                        <option value="poorService">Poor (10%)</option>
+                        <option value=.25>Excellent (25%)</option>
+                        <option value=.20>Good (20%)</option>
+                        <option value=.15>Fair (15%)</option>
+                        <option value=.10>Poor (10%)</option>
                     </select>
 
                     <br>
                     <!--The last input element needed that specifies a button for submissions.-->
                     <!--Specifies the code that will be execute with the given values.x-->
-                    <input type="button" id="submitResponse" value="SUBMIT FOR CALCULATIONS!!! >:D">
+                    <input type="button" id="submitResponse" value="SUBMIT FOR CALCULATIONS!!! >:D" onclick="main()">
+
+					<p id="calcResults">Tip Results will be displayed here</p>
+
+					<div id="results">
+						
+					</div>
 
                 </form>
             </div>

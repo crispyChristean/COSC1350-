@@ -1,0 +1,29 @@
+I want you to create a simple tip calculator. The basic form was created in Module 7. 
+You will be writing the JavaScript code and adding the triggers and bindings needed to make the application work. 
+Use the following approach:
+
+
+
+JavaScript file to make the calculator work:
+
+The script should be triggered once the window fully loads. 
+
+Bind the button's click event to a function (maybe call it calculateTip).
+
+The function will retrieve the user-entered values for amount and service quality.
+
+There should be a validation check to ensure that the bill amount is not empty.
+
+if()
+
+The function, when triggered, will multiply the bill amount and service quality selection. 
+The result will be displayed (and formatted) on the webpage. 
+Note that you will need to have the values of each service quality defined (i.e., .25 for 25%).
+
+
+Hi Dr.T I have a few questions relating to the midterm project.
+My first question is when you describe that the scritp should be tringgered as soon as the window loads, does 
+this mean to execute the result of the tip calculator already before inserting values?
+My second question is that you wantt to results to be displayed and formatted on the webpage, if I understand
+tnis means you would not want us to use the alert to represent the results but rather use some form of code and html
+formatting to have something like a box that shows the results of the calculator code?

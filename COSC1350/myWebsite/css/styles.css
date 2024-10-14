@@ -25,7 +25,12 @@ header {
 
 
 form {
-    background-color:#C3B1E1 
+    background-color:#C3B1E1;
+    width: 300px;
+    height: 300px;
+    border: solid black 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -84,4 +89,18 @@ footer{
     color:rgb(2, 104, 84);
     list-style: none;
     padding: 20px;
+}
+
+#calcResults{
+    font-size: small;
+    background-color: #F7B5CA;
+    width: 100px;
+    height: 35px;
+    border-color:black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    font-weight: bold;
 }

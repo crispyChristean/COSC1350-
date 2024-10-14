@@ -13,3 +13,20 @@ Now I can actually use the Template to start a webpage like you said was designe
 
 
 
+Date: 10/07/2024
+NAME: Christian Espinoza
+
+* Added the calculator.js file to the script folder.
+
+
+
+Date: 10/08/2024
+NAME: Christian Espinoza
+
+* Completed functionalities to the JS file for the calculator assignment
+
+Date: 10/13/2024
+Name: Christian Espinoza
+
+* Updated the CSS of the form element and file paths to the webpages. Added additional text to the calcResults.
+
