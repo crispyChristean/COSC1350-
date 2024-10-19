@@ -1,0 +1,15 @@
+***THIS FILE IS IGNORABLE***
+
+
+What I learned today:
+
+* It is possible for Scritps to share data with one another as long as they're referenced by the same
+webpage
+
+
+* This code displays that it is possible to reference css in JS to determine what properties 
+a section of a webpage will have.
+
+
+* The JS file also shows the importance of use of arrays as in the js03_txt.js file we minimize the amount 
+content we have to write by using arrays in the functions and loops that we create. 
