@@ -1,0 +1,20 @@
+
+
+
+
+
+* Okay so for the longest time I was getting an error described as:
+
+Exception has occurred: TypeError: Cannot set properties of null (setting 'onchange')
+
+this occured on like 14 of the JS file and for the longest time I was having issue solving this.
+It was only until I put my script at the end of the body that not only was the website properly loading 
+but the output actually showed.
+
+*Alternatively I tried to the defer statment in the script and it worked!
+
+* The second Issue I had was with getting the window alert, this was because I didn't have the m10 folder in my own personal folder but rather its own 
+folder that it was retrieved from.
+
+
+Control + shift + i --> Pulls out the developer console.
