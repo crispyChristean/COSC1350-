@@ -30,3 +30,23 @@ Name: Christian Espinoza
 
 * Updated the CSS of the form element and file paths to the webpages. Added additional text to the calcResults.
 
+
+
+Date: 10/29/2024
+Name: Christian Espinoza Celis
+
+* Beginning to make a new webpage on the basis of a Guessing Game
+* Began by adding the guessing html page and linking the file across all pages
+
+* Okay So I was able to make the JS file as well and I was able to create code that communicates and does what it needs to do.
+
+*If I work on this tommorow all I have to do is adjust what I already have to make it run better and prettier.
+
+
+Date: 10/30/2024
+Name:Christian
+
+* Started adjusting the code to be simplified and ensured that everything was correctly shown in the code.
+* Adjusted CSS for the guess form. 
+* Added an array and made two p elements for the html page to show results. 
+* Made the webpage work correctly.

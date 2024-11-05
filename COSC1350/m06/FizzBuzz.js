@@ -35,6 +35,7 @@ while (number != 100){
         /*First Case checks if it is divisble by 3, hence the remainder, as if it is divible by 3 it will
         match the expression and execute the following code (print that it's a fizz and break out of switch) */
 
+//If the remainder of the number variable after dividing it by 3 is 0, print fizz.
         case (number % 3): //This is all achieved by using the number variable (which changes in every loop)
             console.log("Fizz");
             break;

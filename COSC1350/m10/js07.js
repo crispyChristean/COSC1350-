@@ -11,24 +11,27 @@
  */
 
 
-document.getElementById("getFile").onchange = function () {
+document.getElementById("getFile").onchange = function () { //When the value of the input changes/when the user selects a file.
       // Retrieve information about the selected file
-      let userFile = this.files[0]
+      let userFile = this.files[0] //Uses the this keyword (which refers to an object) When used in an object method, this refers to the object.
 
-      // Verify that a text file is selected
-      try {
+
+//Try statement works in the idea that it'll execute the code, and if it returns an error it will throw/catch it and execute following code as a result.
+      try { 
             let isText = userFile.type.startsWith("text");
             if (!isText) { //If Not a text file throw the text that indicates its not a text file.
                   throw userFile.name + " is not a text file";
             }
 
             // Read the contents of the selected file
+            //Fr variable then references the FileReader Object in JS
             let fr = new FileReader(); 
-            fr.readAsText(userFile);
-            //Reads the contents of the selected file as text. 
+            //It will then read the file that is selected as text, if it can be converted into text to begin with.
+            fr.readAsText(userFile); 
 
-            // Once the file has finished loading, display in the page
+            //The variable references the element with the wc_document id. This case being the article element. 
             let sourceDoc = document.getElementById("wc_document"); //Gets the assocaited element with the id.
+            //When the file is loaded onto the webpage, it will then committ the following:
             fr.onload=function() {
                   sourceDoc.innerHTML = fr.result;
                   //Gets the results. 

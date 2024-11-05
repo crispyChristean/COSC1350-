@@ -1,19 +1,22 @@
+<!--MAKE SURE TO UPDATE NAVIGATION-->
+
 <!DOCTYPE html>
 
 <!--
 	Student Name: Chirsitian Espinoza 
-	File Name: index.html
+	File Name: template.html
 	Date: 09/02/2024
 
+	REMEMBER: TEMPLATE serves as a literal template for when writing new webpages, helps reduce work.
  -->
 
 <html lang="en">
 	<head>
-		<title>Christian's Main Page</title>
+		<title>Template</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel = "stylesheet" href="css\styles.css">
-		<!--the link rel and href create a file path to the external style sheet-->
+        <script src="guessing.js" defer></script>
 	</head>
 
 	<body>
@@ -25,13 +28,13 @@
 		</header>
 
 		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
-		<nav class="linked">
+		<nav class ="linked">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="calculator.html">Calculator</a></li>
-				<li><a href="guessing.html">Guessing Game</a></li>
+                <li><a href="guessing.html">Guessing Game</a></li>
 			</ul>
 		</nav>
 
@@ -39,12 +42,32 @@
 		<main>
 
 			<p>Main content</p>
+
+
+            <!--ADD INPUT HERE-->
+            <!--INPUT FOR ENTERING AN INT-->
+            <form id="guessingForm">
+				<h4>Welcome to the Guessing Game Webpage!</h4>
+                <label for = "theGuess">Please Enter a Value for your guess: </label>
+                <input type = "number"  id = "theGuess">
+
+
+                <!--INPUT FOR A BUTTON-->
+
+                <input type = "button" value = "Click Here to Check" onclick="main()">
+
+                <p id ="checkIfRight">Guesses will be displayed here.</p>
+
+                <p id ="lastGuesses">Previous Guess will display here</p>
+
+				<input type = "button" value = "Amongus" onclick = "restart()"></input>
+            </form>
+
 		</main>
 
 		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
 		<footer>
 			<p>&copy; Copyright 2024. All Rights Reserved.</p>
-			<a href="mailto:christianespinozacel@westernwyoming.edu">Christian's Email</a>
 		</footer>
 
 	</body>
