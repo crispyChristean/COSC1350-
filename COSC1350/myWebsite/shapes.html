@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Chirsitian Espinoza 
+	File Name: template.html
+	Date: 09/02/2024
+
+	REMEMBER: TEMPLATE serves as a literal template for when writing new webpages, helps reduce work.
+ -->
+
+<html lang="en">
+	<head>
+		<title>Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" href="css\styles.css">
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			<h1>Christian</h1>
+			<img src="Images\myPhotoforClass.jpg" alt="Picture of Christian" height="500" width="500">
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav class ="linked">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="calculator.html">Calculator</a></li>
+				<li><a href="guessing.html">Guessing Game</a></li>
+                <li><a href="shapes.html">Shapes-Drawing</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+
+			<p>Main content</p>
+            <canvas width="1500" height="1500">
+            <script defer>
+
+                function trapezoid(){
+                    let canvas = document.querySelector("canvas");
+                    let context = canvas.getContext("2d");
+                    context.beginPath();
+                    context.moveTo(20, 100); // Starting point
+                    context.lineTo(120, 100); // Base 1
+                    context.lineTo(100, 20); // Top side
+                    context.lineTo(40, 20); // Top side
+                    context.closePath(); 
+
+                    context.stroke(); // Outline the trapezoid
+
+                }
+
+
+                function redDiamond(){
+                    let canvas = document.querySelector("canvas");
+                    let context = canvas.getContext("2d");
+                    context.beginPath();
+                    context.moveTo(50, 100); // Starting point
+                    context.lineTo(50, 100); // Base 1
+                    context.lineTo(50, 100); // Top side
+                    context.lineTo(50, 100); // Top side
+                    context.closePath(); 
+
+                    context.stroke();
+                }
+
+				function diamond(){
+					let canvas = document.querySelector("canvas");
+                    let context = canvas.getContext("2d");
+					context.beginPath();
+					context.moveTo(150,70);
+					context.lineTo(125,45);
+					context.lineTo(150,20);
+					context.lineTo(175,45);
+					context.closePath();
+					context.stroke();
+				}
+
+
+				function spiral(){
+
+					let canvas = document.querySelector("canvas");
+					let context = canvas.getContext("2d");
+					var radius = 0;
+    				var angle = 0;
+					context.beginPath();
+					for (var i = 0; i < 125; i++) {
+        				radius += 0.50;
+        				// make a complete circle every 50 iterations
+        				angle += (Math.PI * 2) / 50;
+        				var x = 800 / 2 + radius * Math.cos(angle);
+        				var y = 100 / 2 + radius * Math.sin(angle);
+        				context.lineTo(x, y);
+    				}
+    				context.stroke();
+				}
+
+				function zigzag() {
+                    let canvas = document.querySelector("canvas");
+                    let context = canvas.getContext("2d");
+
+                    context.beginPath();
+                    let startX = 200; // Starting 'x' position
+                    let step = 50; // Step size for the zigzag pattern
+                    let direction = 1; // To alternate direction (right or left)
+
+                    for (let y = 15; y < 80; y += 5) {
+                            context.lineTo(startX, y);
+                            startX += step * direction; // Move right or left
+                            direction *= -1; // Flip direction
+                        }
+                    context.stroke();
+                }
+
+				function star(){
+    				let canvas = document.querySelector("canvas");
+    				let context = canvas.getContext("2d");
+    				xStart = 500;
+    				yStart = 500;
+					radius = 100;
+    				angles = [0 * (Math.PI / 180),45 *( Math.PI / 180),90*( Math.PI / 180),135*(Math.PI / 180),180 *(Math.PI / 180),225 * (Math.PI / 180),270 * (Math.PI / 180),315 * (Math.PI / 180)];
+    				newX = [];
+    				newY = [];
+    				for (var i = 0; i < 8; i++){
+    					x = xStart + radius * Math.cos(angles[i]);
+    					y = yStart + radius * Math.sin(angles[i]);
+    					newX.push(x);
+    					newY.push(y);
+    				}
+					context.beginPath();
+					context.moveTo(newX[0],newY[0]);
+    				for (var n = 0; n < 8; n++){
+        				context.quadraticCurveTo(xStart, yStart, newX[n], newY[n]);
+    				}
+					context.closePath();
+    				context.stroke();
+				}
+
+
+                trapezoid();
+                diamond();
+				zigzag();
+				spiral();
+				star();
+
+            </script>
+			</canvas>
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>
