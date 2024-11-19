@@ -1,0 +1,30 @@
+11/17
+
+* Since this assingment is multiple days I decided to log my progression and what I did each day.
+* First thing I did once I got the files situated was add content to the css file. Made the website pretty while importing
+* my own txt font and referencing it as its own font family (while linking the file).
+
+*The second thing I did was measure out a solid 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
