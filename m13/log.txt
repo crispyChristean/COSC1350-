@@ -9,7 +9,78 @@
 
 
 
+11/22/24
 
+* Was able to fix my Paddle with the recommended suggestions,
+* Starting to integrate the Bricks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+draw=()=> {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  ballRender();
+  paddle();
+  drawBricks();
+
+  collisionDetection();
+
+  // Ball movement
+  xPos += xMoveDist;
+  yPos += yMoveDist;
+
+  // Ball wall collision detection
+  if (xPos + xMoveDist > canvas.width - ballRadius || xPos + xMoveDist < ballRadius) {
+    xMoveDist = -xMoveDist // Bounce off the walls
+  }
+
+  // Bounce off the top wall
+  if (yPos + yMoveDist < ballRadius) {
+    yMoveDist = -yMoveDist;
+  }
+  // Ball collision with the bottom (paddle area)
+  else if (yPos + yMoveDist > paddleLocation - ballRadius) {
+    // Check if the ball is within the paddle's horizontal bounds
+    if (xPos > xPaddle && xPos < xPaddle + paddleWidth) {
+      // Ball hits the paddle, reverse vertical direction (bounce effect)
+      yMoveDist = -yMoveDist; // Bounce off the paddle
+
+      // // Add a small random horizontal offset to make the bounce feel more natural
+      // let paddleCenter = xPaddle + paddleWidth / 2;
+      // let ballCenter = xPos;
+
+      // let offset = (ballCenter - paddleCenter) / paddleWidth; // Calculate offset
+      // xMoveDist += offset * 2; // Adjust horizontal direction based on the hit location
+    } 
+    // Ball missed the paddle, trigger game over
+    else if (yPos + yMoveDist > canvas.height - ballRadius) {
+      alert("Game Over!");
+      clearInterval(intervalID); // Stop the game loop
+      document.location.reload(); // Reload the page
+    }
+  }
+
+  // Handle left paddle movement
+  if (moveLeft && xPaddle > 0) {
+    xPaddle -= 7;
+  }
+
+  // Handle right paddle movement
+  if (moveRight && xPaddle < canvas.width - paddleWidth) {
+    xPaddle += 7;
+  }
+};
 
 
 
