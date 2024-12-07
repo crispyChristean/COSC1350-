@@ -1,0 +1,24 @@
+7. Create a new function that draws a 100x15px rectangle at the bottom center of the canvas. 
+Feel free to use ctx.fillStyle to color your paddle and ball differently!
+
+8. Add keydown and keyup event listeners to the DOM, and create two new listener functions for each event. 
+Create two boolean variables called moveLeft and moveRight that are true when their respective key is down, and false when it is up.
+
+if keydown == TRUE {
+    let moveLeft = FALSE 
+}
+
+    let moveRight = True 
+9. Change the paddle's drawn x position to be a variable instead of a hard-coded value. 
+Name this variable xPaddle, and in the draw function check if moveLeft or moveRight is true, 
+and adjust the xPaddle by 3 in the appropriate direction.
+
+if moveLeft == tu
+    xPaddle += 3;
+
+addEventListener()
+addEventListener("keyup", (event) => a)
+
+Remember that the draw function is constantly being called, which is how simple if statements are enough to check for changes in the game state. You should now have a paddle that can move left and right. Make sure you don't allow for the paddle to move off the screen.
+
+Before submitting the assignment, double-check that you have updated the name and date at the top of the source code files, and have replaced my comments with your own. When finished, upload your m13 folder to your GitHub repository. Once you are ready for me to grade, submit your URL here. 

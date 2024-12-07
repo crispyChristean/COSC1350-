@@ -1,0 +1,75 @@
+/*
+Author: Christian Espinoza 
+Date: 11/17/2024
+File Name: breakout.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('joystix monospace.otf'); /* Locate the .ttf file within your directory*/
+  }
+
+/* 
+Remember, since the canvas element has the id=myCanvas, selecting it
+for styling can be as easy as:
+
+ #myCanvas {
+    border-style: solid;
+} 
+    
+Of course, since there will only be one canvas element on the page, you could also just use
+
+canvas {
+    border-style: solid;
+}
+
+Tip: I like to style my homework assignments to match my text editor's theme.
+*/
+body {
+    /*background-color: #F8C8DC;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    */
+    background-image: url('pexels-magda-ehlers-pexels-2832767.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+ 
+h1 {
+    text-align: center;
+    font-size: x-large;
+    font-family: CustomFont;
+    color: coral;
+    border: solid 15px, aquamarine;
+    background-color: beige;
+    padding: 10px;
+    width: 600px;
+}
+
+
+canvas {
+    background-color: beige;
+    margin-top: center;
+    border: solid 15px, black;
+
+}
+
+
+input {
+    display:flex;
+    justify-content:center;
+}
